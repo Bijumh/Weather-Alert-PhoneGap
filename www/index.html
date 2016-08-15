@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apigee Training App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+
+        <div data-role="page" data-theme="c" id="page-books-list">
+            <div data-role="panel" id="menu_panel" data-position="right" data-display="overlay">
+               <h1>Weather & Alert!</h1>
+               <br/><br/>
+                <ul id="books-list" data-role="listview">
+                    <li><a href="#">Setup Alert!</a></li>
+                    <li><a href="#">Notification</a></li>
+                    <li><a href="#" onclick="show_about()">About</a></li>
+                </ul>
+                <br/><br/><br/>
+                <h5 id="about_app">
+                    <p>Welcome to the app Weather & Alert!. This app is build as a project for the University of Denver. This app is basically used for weather and alert information</p>
+                    <hr>
+                    <p>
+                        Contact Me:<br/>
+                        biju7.mh@gmail.com<br/>
+                        <a href="https://np.linkedin.com/in/bijumh">LinkedIn</a>
+                    </p>
+                </h5>
+            </div>
+               
+            <div data-role="header" data-theme="b">
+                <h1 id="header_text">Weather</h1>
+                <a href="#menu_panel" data-icon="bars" class="ui-btn-right" onclick="hide_about()">Menu</a>
+            </div>
+            
+            <div data-role="content" id="filters">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <select name="criteria" id="criteria">
+                        <option value="weather">Weather</option>
+                        <option value="alert">Alert</option>
+                    </select>
+                    <select name="city" id="city">
+                        <option value="denver">Denver</option>
+                        <option value="kathmandu">Kathmandu</option>
+                        <option value="newyork">New York City</option>
+                    </select>
+                </fieldset>
+            </div>
+            
+            <div id="data_place" data-role="content">
+            
+            </div>
+            
+            <div id="welcome" data-role="content">
+                <h3>Welcome to the app Weather & Alert!.</h3>
+                <p>This app is build as a project for the University of Denver. This app is basically used for weather and alert information</p>
+                <p>2016 : Biju Maharjan</p>
+                
+                <button class="ui-btn" onclick="welcome_click()">Continue</button>
+            </div>
+            
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                <h1>© 2016 - Biju Maharjan</h1>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<script type="text/javascript">
+    
+    
+</script>
